@@ -1,0 +1,41 @@
+.Form {
+  background-color: #fff;
+  padding: 2rem 4rem;
+  width: 500px;
+  height: 450px;
+  border-radius: 4px;
+}
+
+.formcontainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.register {
+  padding-bottom: 30px;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+.input {
+  width: 60%;
+  padding: 0.5rem;
+  display: block;
+  margin: 15px auto;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.submit {
+  width: 20%;
+  padding: 0.5rem;
+  background-color: rgba(235, 211, 184, 0.4);
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.submit:hover {
+  background-color: rgba(143, 126, 121, 0.4);
+}
