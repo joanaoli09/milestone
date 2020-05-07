@@ -16,6 +16,7 @@ export default class Form extends React.Component {
     });
   };
   onSubmit = e => {
+    alert("Your information has been uploaded");
     e.preventDefault();
     this.props.onSubmit(this.state);
     this.setState({
