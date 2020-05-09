@@ -4,6 +4,7 @@
   width: 500px;
   height: 450px;
   border-radius: 4px;
+  align-items: center;
 }
 
 .formcontainer {
@@ -13,9 +14,11 @@
 }
 
 .register {
+  padding-top: 20px;
   padding-bottom: 30px;
   font-family: Helvetica, sans-serif;
   letter-spacing: 2px;
+  font-size: 20px; 
 }
 
 .input {
@@ -30,6 +33,7 @@
 .submit {
   width: 20%;
   padding: 0.5rem;
+  margin-top: 20px;
   background-color: rgba(235, 211, 184, 0.4);
   border: none;
   color: #fff;
