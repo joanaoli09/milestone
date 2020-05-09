@@ -3,29 +3,29 @@ import "./Form.css";
 
 const App = () => {
   const [state, setState] = React.useState({
-    firstName: '',
-    lastName: '',
-    username: '',
-    email: '',
-    password: '',
+    firstName: "",
+    lastName: "",
+    username: "",
+    email: "",
+    password: ""
   });
-  
-  const handleSubmit = React.useCallback((e) => {
-    alert('Your information has been uploaded.');
+
+  const handleSubmit = React.useCallback(e => {
+    alert("Your information has been uploaded.");
 
     e.preventDefault();
-    
+
     setState({
-      firstName: '',
-      lastName: '',
-      username: '',
-      email: '',
-      password: '',
+      firstName: "",
+      lastName: "",
+      username: "",
+      email: "",
+      password: ""
     });
   }, []);
-  
+
   const handleChange = React.useCallback(({ target }) => {
-    setState((prevState) => ({ ...prevState, [target.name]: target.value }));
+    setState(prevState => ({ ...prevState, [target.name]: target.value }));
   }, []);
 
   return (
@@ -37,32 +37,32 @@ const App = () => {
           className="input"
           name="firstName"
           placeholder="First name"
-          value={ state.firstName }
-          onChange={ handleChange }
+          value={state.firstName}
+          onChange={handleChange}
         />
 
         <input
           className="input"
           name="lastName"
           placeholder="Last name"
-          value={ state.lastName }
-          onChange={ handleChange }
+          value={state.lastName}
+          onChange={handleChange}
         />
 
         <input
           className="input"
           name="username"
           placeholder="Username"
-          value={ state.username }
-          onChange={ handleChange }
+          value={state.username}
+          onChange={handleChange}
         />
 
         <input
           className="input"
           name="email"
           placeholder="Email"
-          value={ state.email }
-          onChange={ handleChange }
+          value={state.email}
+          onChange={handleChange}
         />
 
         <input
@@ -70,16 +70,16 @@ const App = () => {
           name="password"
           type="password"
           placeholder="Password"
-          value={ state.password }
-          onChange={ handleChange }
+          value={state.password}
+          onChange={handleChange}
         />
 
-        <button className="submit" onClick={ handleSubmit }>
+        <button className="submit" onClick={handleSubmit}>
           Submit
         </button>
       </form>
     </div>
   );
-}
-
-ReactDOM.render(<App />, document.querySelector('#app'));
+};
+export default App;
+ReactDOM.render(<App />, document.querySelector("#app"));
