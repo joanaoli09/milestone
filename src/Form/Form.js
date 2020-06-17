@@ -1,7 +1,7 @@
 import React from "react";
 import "./Form.css";
 
-const App = () => {
+function App () {
   const [state, setState] = React.useState({
     firstName: "",
     lastName: "",
@@ -31,7 +31,7 @@ const App = () => {
   return (
     <div className="formcontainer">
       <form className="Form">
-        <p className="register">CREATE ACCOUNT</p>
+      <p className="register">CREATE ACCOUNT</p>
 
         <input
           className="input"
